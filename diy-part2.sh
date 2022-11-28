@@ -13,9 +13,6 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.7.1/g' package/base-files/files/bin/config_generate
 
-# 拉取fcgiwrap
-git clone https://github.com/yhfudev/openwrt-fcgiwrap.git package/feeds/packages/fcgiwrap
-
 # 删除自定义源默认的 argon 主题
 rm -rf package/lean/luci-theme-argon
           
